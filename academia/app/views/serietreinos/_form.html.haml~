@@ -1,0 +1,7 @@
+= semantic_form_for [@serietreino] do |form|
+  
+  = form.input :quantidade :label => 2
+  = form.input :repeticao :label => 2
+  = form.input :treino, :member_label => :objetivo, :label => 'Treino' 
+  = form.input :exercicio, :member_label => :descricao, :label => 'Exercicio' 	
+  = form.submit 'Salvar'

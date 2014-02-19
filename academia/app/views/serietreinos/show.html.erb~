@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Quantidade:</b>
+  <%= @serietreino.quantidade %>
+</p>
+
+<p>
+  <b>Repeticao:</b>
+  <%= @serietreino.repeticao %>
+</p>
+
+<p>
+  <b>Treino:</b>
+  <%= @serietreino.treino %>
+</p>
+
+<p>
+  <b>Exercicio:</b>
+  <%= @serietreino.exercicio %>
+</p>
+
+
+<%= link_to 'Edit', edit_serietreino_path(@serietreino) %> |
+<%= link_to 'Back', serietreinos_path %>
