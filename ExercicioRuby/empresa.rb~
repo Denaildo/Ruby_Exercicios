@@ -1,0 +1,20 @@
+require 'test/unit'
+require './cliente'
+
+class ClienteTest < Test::Unit::TestCase
+
+    def setup
+        @r = Retangulo.new(2,3)
+    end
+
+    def test_area()
+        assert_equal(6,@r.area)
+    end
+
+    def test_perimetro
+        assert_equal(10, @r.perimetro)
+    end
+
+    def teardown
+        @r = nil
+    end
